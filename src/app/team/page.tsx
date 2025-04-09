@@ -28,7 +28,7 @@ export default function Team() {
         {/* Flex container for horizontal layout */}
         <div className="flex flex-wrap justify-center gap-6">
           {/* Founder 1 */}
-          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '40px'}}>
+          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '60px', paddingRight: '60px'}}>
             <img 
               src="/akhil.jpeg" 
               alt="Akhil Dua" 
@@ -36,11 +36,11 @@ export default function Team() {
               style={{width: '200px', height: '200px'}}
             />
             <h3 className="text-xl font-semibold text-[#4e4e4e]">Akhil Dua</h3>
-            <p className="text-lg text-[#555] mb-2">CMU</p>
+            <p className="text-lg text-[#555] mb-2">Carnegie Mellon University</p>
           </div>
           
           {/* Founder 2 */}
-          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '40px'}}>
+          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '60px', paddingRight: '60px'}}>
             <img 
               src="/mahima1.jpeg" 
               alt="Mahima Jagadeesh Patel" 
@@ -48,11 +48,11 @@ export default function Team() {
               style={{width: '200px', height: '200px'}}
             />
             <h3 className="text-xl font-semibold text-[#4e4e4e]">Mahima Jagadeesh Patel</h3>
-            <p className="text-lg text-[#555] mb-2">CMU</p>
+            <p className="text-lg text-[#555] mb-2">Carnegie Mellon University</p>
           </div>
           
           {/* Founder 3 */}
-          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '40px'}}>
+          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '60px', paddingRight: '60px'}}>
             <img 
               src="/reuben2.jpeg" 
               alt="Reuben George Mathew" 
@@ -60,11 +60,11 @@ export default function Team() {
               style={{width: '200px', height: '200px'}}
             />
             <h3 className="text-xl font-semibold text-[#4e4e4e]">Reuben George Mathew</h3>
-            <p className="text-lg text-[#555] mb-2">CMU</p>
+            <p className="text-lg text-[#555] mb-2">Carnegie Mellon University</p>
           </div>
           
           {/* Founder 4 */}
-          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '40px'}}>
+          <div className="team-card bg-white shadow-md rounded-lg p-6 text-center max-w-xs" style={{paddingLeft: '60px', paddingRight: '60px'}}>
             <img 
               src="/arihant.jpeg" 
               alt="Arihant Seth" 
@@ -72,7 +72,7 @@ export default function Team() {
               style={{width: '200px', height: '200px'}}
             />
             <h3 className="text-xl font-semibold text-[#4e4e4e]">Arihant Seth</h3>
-            <p className="text-lg text-[#555] mb-2">CMU</p>
+            <p className="text-lg text-[#555] mb-2">Carnegie Mellon University</p>
           </div>
         </div>
       </div>

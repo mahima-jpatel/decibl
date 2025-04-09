@@ -1,10 +1,15 @@
-import { createObjectCsvWriter } from 'csv-writer';
-import path from 'path';
+// /src/app/api/signup/route.js
+
+import { MongoClient } from 'mongodb';
+
+const uri = 'mongodb+srv://dbUser:dbUserPass@cluster0.vdxzfys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const client = new MongoClient(uri);
 
 export async function POST(req) {
-  const { firstName, lastName, email, interests } = await req.json();
+  // Destructure data from the request body
+  const { firstName, lastName, email, interests } = await req.json(); // Use req.json() for parsing the request body in Next.js 13
 
-  // Check for missing required fields
+  // Validate that required fields are provided
   if (!firstName || !lastName || !email) {
     return new Response(
       JSON.stringify({ message: 'Please fill in all required fields.' }),
@@ -12,36 +17,35 @@ export async function POST(req) {
     );
   }
 
-  // Define the path for the CSV file
-  const csvFilePath = path.join(process.cwd(), 'users.csv');
-
-  // Set up the CSV writer
-  const csvWriter = createObjectCsvWriter({
-    path: csvFilePath,
-    header: [
-      { id: 'firstName', title: 'First Name' },
-      { id: 'lastName', title: 'Last Name' },
-      { id: 'email', title: 'Email' },
-      { id: 'interests', title: 'Interests' },
-    ],
-    append: true, // Append data to the CSV file
-  });
-
-  // Prepare the data to be written
-  const user = { firstName, lastName, email, interests };
-
   try {
-    // Write the user data to the CSV
-    await csvWriter.writeRecords([user]);
+    // Connect to the MongoDB client
+    await client.connect();
+
+    // Get the "decibl" database
+    const database = client.db('decibl');  // Your database name
+    const usersCollection = database.collection('users');  // Your collection name
+
+    // Insert the new user into the collection
+    const result = await usersCollection.insertOne({
+      firstName,
+      lastName,
+      email,
+      interests,
+    });
+
+    // Send success response
     return new Response(
       JSON.stringify({ message: 'User signed up successfully.' }),
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error writing to CSV:', error);
+    console.error('Error saving user data:', error);
     return new Response(
       JSON.stringify({ message: 'Failed to save user data.' }),
       { status: 500 }
     );
+  } finally {
+    // Close the MongoDB client connection
+    await client.close();
   }
 }

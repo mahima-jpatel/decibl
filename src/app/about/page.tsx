@@ -66,7 +66,7 @@ export default function About() {
                     <div>
                     <h3 className="font-bold text-xl text-gray-800 " style={{margin: '0px'}}>3. Daily Reflection</h3>
                     <p className="text-gray-600" style={{margin: '0px'}}>
-                        Each day, you'll be prompted with reflection activities that encourage mindfulness and emotional awareness. You can also choose deeper journaling sessions to explore your thoughts in a safe and supportive space.
+                        Each day, you&apos;ll be prompted with reflection activities that encourage mindfulness and emotional awareness. You can also choose deeper journaling sessions to explore your thoughts in a safe and supportive space.
                     </p>
                 </div>
                 
@@ -76,7 +76,7 @@ export default function About() {
                     <div>
                     <h3 className="font-bold text-xl text-gray-800 mb-2" style={{margin: '0px'}}>4. Gentle Progress</h3>
                     <p className="text-gray-600" style={{margin: '0px'}}>
-                        At Decibl, we believe that true growth happens gradually. That&apos;s why we encourage users to progress at their own pace—whether you're taking quick reflective moments or diving into more profound personal development.
+                        At Decibl, we believe that true growth happens gradually. That&apos;s why we encourage users to progress at their own pace—whether you&apos;re taking quick reflective moments or diving into more profound personal development.
                     </p>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Safe and Supportive</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
-                    We've created a welcoming space for everyone, ensuring that you always feel supported in your growth journey, 
+                    We&apos;ve created a welcoming space for everyone, ensuring that you always feel supported in your growth journey, 
                     no matter where you are.
                   </p>
                 </div>
@@ -146,7 +146,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Holistic Wellness</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
-                    Decibl isn't just about meditation or stress reduction—it&apos;s about developing long-term emotional resilience and 
+                    Decibl isn&apos;t just about meditation or stress reduction—it&apos;s about developing long-term emotional resilience and 
                     building a balanced mindset, step by step.
                   </p>
                 </div>
@@ -161,7 +161,7 @@ export default function About() {
             </h2>
             
             <p className="text-xl text-gray-700 leading-relaxed mb-8" style={{margin: '0px'}}>
-              Whether you're seeking to improve your emotional well-being, create a mindful daily routine, or just get more in touch with 
+              Whether you&apos;re seeking to improve your emotional well-being, create a mindful daily routine, or just get more in touch with 
               your thoughts, Decibl offers an easy and rewarding way to start your mental wellness journey.
             </p>
             

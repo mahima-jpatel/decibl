@@ -26,7 +26,7 @@ export async function POST(req) {
     const usersCollection = database.collection('users');  // Your collection name
 
     // Insert the new user into the collection
-    const result = await usersCollection.insertOne({
+    await usersCollection.insertOne({
       firstName,
       lastName,
       email,

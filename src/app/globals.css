@@ -1,26 +1,138 @@
-@import "tailwindcss";
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@import '@fontsource/bricolage-grotesque/400.css';  /* Regular weight */
+@import '@fontsource/bricolage-grotesque/600.css';  /* Bold weight */
+
+/* Gradient and Color Palette */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gradient-start: #E6E6FA; /* Lavender */
+  --gradient-end: #FFF9E6;   /* Light Cream/Yellow */
+  --button-bg: #9F78E5;      /* Button Purple */
+  --button-hover: #7D56B5;   /* Hover Button Purple */
+  --text-color: #333333;     /* Dark Text for readability */
+  --light-text: #F5F5F5;     /* Light Text for contrast */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Body Styling */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
+
+h1, h2, h3 {
+  font-weight: 600; /* Bold for headers */
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #9F78E5; /* Purple color */
+}
+
+a:hover {
+  color: #5A47E5; /* Darker purple on hover */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+
+.hero h1 {
+  color: #9b8be7; /* Soft lavender color */
+  font-size: 4rem;
+}
+
+.hero p {
+  color: #1a1a1a; /* Dark gray */
+  font-size: 2rem;
+}
+
+.cta-button {
+  background-color: #8c6ed6; /* A calming, soft purple */
+  color: white;
+}
+
+/* Buttons */
+button, .cta-button {
+  background-color: var(--button-bg);
+  color: var(--light-text);
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .cta-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Styling for Rounded Images */
+.rounded-images {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+/* Header Styling */
+header {
+  background-color: #FFF9E6;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ensure it does not stretch too far */
+  padding: 0 20px;
+}
+
+header .brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #9F78E5; /* Purple Color for Decibl */
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #9F78E5; /* Purple color on hover */
+}
+

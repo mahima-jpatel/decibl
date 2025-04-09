@@ -1,5 +1,5 @@
 "use client";
-import '../styles/globals.css';
+import './globals.css';
 import Link from 'next/link';
 
 

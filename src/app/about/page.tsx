@@ -57,7 +57,7 @@ export default function About() {
                     <div>
                     <h3 className="font-bold text-xl text-gray-800 " style={{margin: '0px'}}>2. Visual Metaphor - Your Personal Tree</h3>
                     <p className="text-gray-600" style={{margin: '0px'}}>
-                        The heart of Decibl's journey is the growth of your personal tree. As you complete daily sessions, your tree grows, symbolizing the growth of your inner world. With each step, your tree becomes more vibrant, encouraging you to stay consistent.
+                        The heart of Decibl&apos;s journey is the growth of your personal tree. As you complete daily sessions, your tree grows, symbolizing the growth of your inner world. With each step, your tree becomes more vibrant, encouraging you to stay consistent.
                     </p>
                 </div>
                 
@@ -76,7 +76,7 @@ export default function About() {
                     <div>
                     <h3 className="font-bold text-xl text-gray-800 mb-2" style={{margin: '0px'}}>4. Gentle Progress</h3>
                     <p className="text-gray-600" style={{margin: '0px'}}>
-                        At Decibl, we believe that true growth happens gradually. That's why we encourage users to progress at their own pace—whether you're taking quick reflective moments or diving into more profound personal development.
+                        At Decibl, we believe that true growth happens gradually. That&apos;s why we encourage users to progress at their own pace—whether you're taking quick reflective moments or diving into more profound personal development.
                     </p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ export default function About() {
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Personalized Experience</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
                     Your journey with Decibl is yours to control. Choose the depth of engagement that suits your needs—whether 
-                    it's brief daily sessions or more immersive personal reflections.
+                    it&apos;s brief daily sessions or more immersive personal reflections.
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Holistic Wellness</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
-                    Decibl isn't just about meditation or stress reduction—it's about developing long-term emotional resilience and 
+                    Decibl isn't just about meditation or stress reduction—it&apos;s about developing long-term emotional resilience and 
                     building a balanced mindset, step by step.
                   </p>
                 </div>

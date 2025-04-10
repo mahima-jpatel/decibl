@@ -3,10 +3,6 @@ import './globals.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
-import FullPage from './components/FullPage'; // Import the FullPage component
-
-
-
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

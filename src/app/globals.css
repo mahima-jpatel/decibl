@@ -202,28 +202,3 @@ header nav a:hover {
   }
 }
 
-/* fullPage.js styles */
-#fullpage {
-  height: 100vh; /* Make each section take up full height of the viewport */
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #fff;
-  flex-direction: column;
-  text-align: center;
-}
-
-.fp-nav {
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-img{
-  background-size: 100% 100%;
-}
-

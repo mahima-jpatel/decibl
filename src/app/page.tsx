@@ -19,7 +19,7 @@ export default function Home() {
 
 
 
-      <div className="hero flex-1 flex flex-col justify-center items-center px-4 md:px-8 py-12 min-h-screen relative">
+      <div className="hero flex-1 flex flex-col justify-center items-center px-4 md:px-8 py-12 relative" style={{ paddingLeft: '0px'}}>
   <div className="text-section max-w-4xl mx-auto text-center space-y-6 relative z-10">
     <h1 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] mb-6">
       Embark on Your Mental Wellness Journey

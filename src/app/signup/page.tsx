@@ -67,7 +67,7 @@ export default function SignUp() {
         </div>
       </header>
 
-      <div className="flex justify-center items-center bg-gradient-to-br from-purple-50 to-blue-50">
+      <div className="flex justify-center items-center bg-gradient-to-br from-purple-50 to-blue-50" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
         <div className="w-[500px] bg-white shadow-md rounded-lg p-20">
           <h1 className="text-9xl font-bold text-center mb-10 text-gray-800" style={{ fontSize: '40px' }}>Join the Waitlist</h1>
           

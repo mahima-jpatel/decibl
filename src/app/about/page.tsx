@@ -18,9 +18,9 @@ export default function About() {
       </header>
 
       {/* About Content */}
-      <div className="flex-1 flex flex-col items-left px-4 md:px-8 py-12 relative">
+      <div className="flex-1 flex flex-col items-left px-6 sm:px-12 md:px-16 py-12 relative" style={{ paddingLeft: '10%', paddingRight: '10%'}}>
         {/* About Section - Main content */}
-        <div className="max-w-4xl mx-auto text-left space-y-10 relative z-10 py-8" style={{paddingLeft: '300px', paddingRight: '300px'}}>
+        <div className="max-w-5xl mx-auto text-left space-y-10 relative z-10 py-8 text-justify">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#1a1a1a] mb-8">
             About Decibl
           </h1>
@@ -93,11 +93,6 @@ export default function About() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mt-8">
               <div className="flex items-start p-4">
-                {/* <div className="text-purple-500 mr-4 mt-1">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div> */}
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Personalized Experience</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
@@ -108,11 +103,6 @@ export default function About() {
               </div>
               
               <div className="flex items-start p-4">
-                {/* <div className="text-purple-500 mr-4 mt-1">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div> */}
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Guided Growth</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
@@ -123,11 +113,6 @@ export default function About() {
               </div>
               
               <div className="flex items-start p-4">
-                {/* <div className="text-purple-500 mr-4 mt-1">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div> */}
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Safe and Supportive</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>
@@ -138,11 +123,6 @@ export default function About() {
               </div>
               
               <div className="flex items-start p-4">
-                {/* <div className="text-purple-500 mr-4 mt-1">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div> */}
                 <div>
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-2" style={{margin: '0px'}}>Holistic Wellness</h3>
                   <p className="text-gray-700 leading-relaxed" style={{margin: '0px'}}>

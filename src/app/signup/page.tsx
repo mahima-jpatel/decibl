@@ -55,14 +55,14 @@ export default function SignUp() {
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <header>
-        <div className="container">
-          <div className="brand" style={{ fontSize: '40px' }}>decibl</div>
-          <nav>
-            <Link href="/" style={{ fontSize: '20px' }}>Home</Link>
-            <Link href="/about" style={{ fontSize: '20px' }}>About</Link>
-            <Link href="/team" style={{ fontSize: '20px' }}>Team</Link>
-            <Link href="/signup" style={{ fontSize: '20px' }}>Sign Up</Link>
+      <header className="bg-[#FFF9E6] p-4 w-full sticky top-0 shadow-md">
+        <div className="container flex justify-between items-center mx-auto">
+          <div className="brand text-3xl md:text-4xl text-[#9F78E5]">decibl</div>
+          <nav className="flex space-x-6 md:space-x-8">
+            <Link href="/" className="text-lg md:text-xl text-[#333]">Home</Link>
+            <Link href="/about" className="text-lg md:text-xl text-[#333]">About</Link>
+            <Link href="/team" className="text-lg md:text-xl text-[#333]">Team</Link>
+            <Link href="/signup" className="text-lg md:text-xl text-[#333]">Sign Up</Link>
           </nav>
         </div>
       </header>
@@ -90,7 +90,7 @@ export default function SignUp() {
               <input
                 type="text"
                 id="firstName"
-                style={{ height: '40px', fontSize: '20px' }}
+                style={{ height: '40px', fontSize: '20px'}}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-300 focus:border-purple-300 transition"
                 placeholder="John"
                 value={firstName}

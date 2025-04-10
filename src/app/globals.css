@@ -26,6 +26,10 @@ body {
   padding: 0;
 }
 
+input, textarea{
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
 h1, h2, h3 {
   font-weight: 600; /* Bold for headers */
 }
@@ -109,7 +113,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Ensure it does not stretch too far */
+  max-width: 1200px;
   padding: 0 20px;
 }
 

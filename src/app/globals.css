@@ -5,6 +5,8 @@
 
 @import '@fontsource/bricolage-grotesque/400.css';  /* Regular weight */
 @import '@fontsource/bricolage-grotesque/600.css';  /* Bold weight */
+@import 'fullpage.js/dist/fullpage.min.css';
+
 
 /* Gradient and Color Palette */
 :root {
@@ -199,3 +201,29 @@ header nav a:hover {
     display: block !important;
   }
 }
+
+/* fullPage.js styles */
+#fullpage {
+  height: 100vh; /* Make each section take up full height of the viewport */
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fp-nav {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img{
+  background-size: 100% 100%;
+}
+

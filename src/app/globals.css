@@ -93,11 +93,13 @@ button:hover, .cta-button:hover {
   object-fit: cover;
   margin-top: 20px;
 }
+
 /* Header Styling */
 header {
   background-color: #FFF9E6;
   padding: 20px 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -106,6 +108,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   max-width: 100vw;
   margin: 0 auto;
+  z-index: 1000;
 }
 
 header .container {
@@ -140,3 +143,59 @@ header nav a:hover {
   color: #9F78E5; /* Purple color on hover */
 }
 
+
+/* Add these styles to your globals.css file */
+
+/* Hamburger Menu Styles */
+.hamburger-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  z-index: 20;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+}
+
+.hamburger-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mobile-menu a:hover {
+  background-color: rgba(159, 120, 229, 0.1);
+}
+
+/* Make sure the hamburger is always visible on mobile */
+@media (max-width: 767px) {
+  .hamburger-btn {
+    display: block;
+  }
+  
+  /* Force display of hamburger button at mobile sizes */
+  header .container > div:last-child {
+    display: block !important;
+  }
+}
